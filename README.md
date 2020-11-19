@@ -1,1 +1,10 @@
 # New-York-City-s-Citi-Bike-System-as-a-Substitute-for-Subway-Travel-During-Service-Disruptions
+## Research Question:
+In this project, we map the dynamic network structure and properties of the Citi Bike system and gather data about NYC subway service disruptions to see if Citi Bike use patterns show any meaningful change during the disruptions.
+
+## Network Structures, Data Sources, and Methodologies:
+Citi Bike: Each bike station is a node, and two nodes are connected with an edge if a person rents a bike at one station and returns it at another. The weights on the edges would be the number of trips between the two stations, and the directions on the edges would flow from the starting point to the end point. To map this network, we will use publicly available datasets collected and maintained by Citi Bike in Excel format (https://www.citibikenyc.com/system-data) and upload into R for network analysis.
+We will then scrape data from the MTA Alert Archive and filter for incidents in 2018. (source: https://www.mymtaalerts.com/messagearchive.aspx) If a geographic area surrounding a subway line with a service disruption has more Citibike activity during the time of the disruption than on normal days, it could be said that there is evidence that the Citi Bike system functions well as a substitute for subway travel in that particular area. 
+
+## Insights
+A possible application of our project is to help the city government evaluate whether expanding Citibike capabilities in a particular area will be helpful when there is a major planned subway service suspension. In September, 2018, MTA announced a Fast-Forward Plan that would modernize the subway system in the future with more constructions expected. Moreover, the company plans to suspend the service of L train across the East River and within Manhattan starting from April, 2019. Our research, which aims to derive relationships between the citi bike network and the MTA maintenance and constructions network, will be able to help the 400,000 daily riders affected by the temporary suspension of L train, and any possible constructions on the MTA system in the future.
